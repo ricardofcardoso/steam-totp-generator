@@ -1,0 +1,10 @@
+[
+    {
+        "accountName": "account1",
+        "shared_secret": "shared_secret_1_here"
+    },
+    {
+        "accountName": "account2",
+        "shared_secret": "shared_secret_2_here"
+    }
+]

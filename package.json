@@ -1,0 +1,23 @@
+{
+  "name": "steam-totp-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "pkg . --targets latest-win-x64 --output steam-totp-generator.exe"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "inquirer": "^8.2.6",
+    "path": "^0.12.7",
+    "steam-totp": "^2.1.2"
+  },
+  "pkg": {
+    "assets": [
+      "steam.json"
+    ]
+  }
+}
