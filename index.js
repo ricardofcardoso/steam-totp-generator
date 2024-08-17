@@ -10,11 +10,9 @@ const getFilePath = () => {
 const generateTOTPForAccount = (account, offset) => {
     const sharedSecret = account.shared_secret;
     const code = SteamTotp.generateAuthCode(sharedSecret, offset);
-    const deviceId = SteamTotp.getDeviceID(account.account_name);
 
     console.log(`\nAccount: ${account.accountName}`);
-    console.log(`Code: ${code}`);
-    console.log(`Device ID: ${deviceId}\n`);
+    console.log(`Code: ${code}\n`);
 };
 
 const promptUserAction = () => {
